@@ -1,0 +1,27 @@
+Variant 24.
+VN = {S, A, C, D}, 
+VT={a, b},
+P= {
+1. S -> aA
+2. A -> bS
+3. A -> dD
+4. D -> bC
+5. C -> a
+6. C -> bA
+7. D -> aD }
+
+
+Checked strings:
+1. adaabbbabadaba - true
+2. adbbbadaaaba - true
+3. adaabbbadaaaba - true
+4. adbbbababadbbdba - true
+5. adaaaabbbadaaaba - true
+6. adba - true
+7. abbdadaba - false
+8. abbddabadaba - false
+9. adbadabadaba - false
+10. adbadaabdaaba - false
+
+
+My grammar is of type 3
